@@ -373,7 +373,7 @@ public class Peripheral extends BluetoothGattCallback {
             callbackContext.error("Characteristic " + characteristicUUID + " not found");
         }
 
-        if (!success) {
+        if (success) {
             commandCompleted();
         }
     }
